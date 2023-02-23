@@ -10,8 +10,9 @@ const dashboardRoute = require("./dashboard.route");
 const shareTicketRoute = require("./share.ticket.route");
 
 router.get("/v1/", (req, res) => {
-	res.send("Welcome to Wonderland ticketing API");
+	res.send("Welcome to eVENTA ticketing API");
 });
+
 router.use("/v1/events", eventRoute);
 router.use("/v1/tickets", ticketRoute);
 router.use("/v1/categories", categoryRoute);
